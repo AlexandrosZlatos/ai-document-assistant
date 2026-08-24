@@ -1,0 +1,23 @@
+# Python bytecode / compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# Secrets & Environment variables (VERY IMPORTANT)
+.env
+.env.*
+
+# Local Databases & Vector DBs
+chroma_db/
+*.sqlite3
+users.db
+
+# IDE & OS settings
+.vscode/
+.idea/
+.DS_Store
