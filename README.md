@@ -54,3 +54,10 @@ Open two separate terminal windows:
   `streamlit run streamlit_app.py`
 
 Open your browser and navigate to `http://localhost:8501` to use the application.
+
+## ⚠️ Known Issues & Upcoming Improvements
+
+* **Authentication Endpoint Fallback:** 
+  The Streamlit frontend currently uses a two-step fallback mechanism (Form Data $\rightarrow$ JSON) during user login. This is a temporary measure to handle an HTTP 422 schema edge-case with FastAPI.
+* **Planned Fix:** 
+  Standardizing the API authentication payload to a single unified schema in the upcoming refactor to optimize login performance and response times.
